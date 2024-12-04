@@ -269,4 +269,10 @@ namespace ams::mitm::settings {
         R_SUCCEED();
     }
 
+    Result SetSysMitmService::GetQuestFlag(sf::Out<bool> isQuest){
+        isQuest.SetValue(false);
+
+        R_SUCCEED();
+    }
+
 }
