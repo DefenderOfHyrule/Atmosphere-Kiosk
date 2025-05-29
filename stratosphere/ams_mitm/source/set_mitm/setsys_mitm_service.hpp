@@ -24,7 +24,8 @@
     AMS_SF_METHOD_INFO(C, H, 37, Result, GetSettingsItemValueSize,    (sf::Out<u64> out_size, const ams::settings::SettingsName &name, const ams::settings::SettingsItemKey &key),                           (out_size, name, key))      \
     AMS_SF_METHOD_INFO(C, H, 38, Result, GetSettingsItemValue,        (sf::Out<u64> out_size, const sf::OutBuffer &out, const ams::settings::SettingsName &name, const ams::settings::SettingsItemKey &key), (out_size, out, name, key)) \
     AMS_SF_METHOD_INFO(C, H, 62, Result, GetDebugModeFlag,         (sf::Out<bool> out),                                                                                                                                 (out)) \
-    AMS_SF_METHOD_INFO(C, H, 47, Result, GetQuestFlag, (sf::Out<bool> isQuest), (isQuest))
+    AMS_SF_METHOD_INFO(C, H, 47, Result, GetQuestFlag, (sf::Out<bool> out), (out))
+
 
 AMS_SF_DEFINE_MITM_INTERFACE(ams::mitm::settings, ISetSysMitmInterface, AMS_SETTINGS_SYSTEM_MITM_INTERFACE_INFO, 0x0E82ED13)
 
@@ -49,7 +50,7 @@ namespace ams::mitm::settings {
             Result GetSettingsItemValueSize(sf::Out<u64> out_size, const ams::settings::SettingsName &name, const ams::settings::SettingsItemKey &key);
             Result GetSettingsItemValue(sf::Out<u64> out_size, const sf::OutBuffer &out, const ams::settings::SettingsName &name, const ams::settings::SettingsItemKey &key);
             Result GetDebugModeFlag(sf::Out<bool> out);
-            Result GetQuestFlag(sf::Out<bool> isQuest);
+            Result GetQuestFlag(sf::Out<bool> out);
     };
     static_assert(IsISetSysMitmInterface<SetSysMitmService>);
 
