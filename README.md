@@ -8,11 +8,6 @@
 
 Atmosphère is a work-in-progress customized firmware for the Nintendo Switch.
 
-Compiling
-=====
-
-After compiling the KIP patch from the ams-kip branch, it will be located in /stratosphere/ams_mitm/out/nintendo_nx_arm64_armv8a/release.
-
 Components
 =====
 
