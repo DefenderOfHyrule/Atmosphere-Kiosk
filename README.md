@@ -8,9 +8,6 @@
 
 Atmosphère is a work-in-progress customized firmware for the Nintendo Switch.
 
-
-
-
 Compiling
 =====
 
